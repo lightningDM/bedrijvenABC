@@ -1,0 +1,17 @@
+<%= form_tag('/posts') do %>
+<p>Op wat wil u zoeken?</p>
+<table>
+    <tr>
+		<td class="label"><%= radio_button_tag 'naam', 'naam' %>Naam</td>
+		<td class="label"><%= radio_button_tag 'ondernemingsnummer', 'ondernemingsnummer' %>Ondernemingsnummer</td>
+<td class="label"><%= radio_button_tag 'sector', 'sector' %>Sector</td>
+<td class="label"><%= radio_button_tag 'regio', 'regio' %>Regio</td>
+    </tr>
+</table>
+<br />
+<%= text_field_tag "param" %>
+
+<%= submit_tag 'Zoeken' %>  
+<% end -%>
+
+

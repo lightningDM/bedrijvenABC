@@ -1,0 +1,105 @@
+<%= form_for(@company) do |f| %>
+  <% if @company.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@company.errors.count, "error") %> prohibited this company from being saved:</h2>
+
+      <ul>
+      <% @company.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ondernemingsnummer %><br />
+    <%= f.text_field :ondernemingsnummer %>
+  </div>
+  <div class="field">
+    <%= f.label :naam %><br />
+    <%= f.text_field :naam %>
+  </div>
+  <div class="field">
+    <%= f.label :logo_url %><br />
+    <%= f.text_field :logo_url %>
+  </div>
+  <div class="field">
+    <%= f.label :straat %><br />
+    <%= f.text_field :straat %>
+  </div>
+  <div class="field">
+    <%= f.label :huisnummer %><br />
+    <%= f.text_field :huisnummer %>
+  </div>
+  <div class="field">
+    <%= f.label :gemeente %><br />
+    <%= f.text_field :gemeente %>
+  </div>
+  <div class="field">
+    <%= f.label :contactpersoon %><br />
+    <%= f.text_field :contactpersoon %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :telefoonnummer %><br />
+    <%= f.text_field :telefoonnummer %>
+  </div>
+  <div class="field">
+    <%= f.label :beschrijving %><br />
+    <%= f.text_area :beschrijving %>
+  </div>
+  <div class="field">
+    <%= f.label :sector %><br />
+    <%= f.text_field :sector %>
+  </div>
+  <div class="field">
+    <%= f.label :regio %><br />
+    <%= f.text_field :regio %>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br />
+    <%= f.text_field :website %>
+  </div>
+  <div class="field">
+    <%= f.label :geschiedenis %><br />
+    <%= f.text_area :geschiedenis %>
+  </div>
+  <div class="field">
+    <%= f.label :maandag %><br />
+    <%= f.text_field :maandag %>
+  </div>
+  <div class="field">
+    <%= f.label :dinsdag %><br />
+    <%= f.text_field :dinsdag %>
+  </div>
+  <div class="field">
+    <%= f.label :woensdag %><br />
+    <%= f.text_field :woensdag %>
+  </div>
+  <div class="field">
+    <%= f.label :donderdag %><br />
+    <%= f.text_field :donderdag %>
+  </div>
+  <div class="field">
+    <%= f.label :vrijdag %><br />
+    <%= f.text_field :vrijdag %>
+  </div>
+  <div class="field">
+    <%= f.label :zaterdag %><br />
+    <%= f.text_field :zaterdag %>
+  </div>
+  <div class="field">
+    <%= f.label :zondag %><br />
+    <%= f.text_field :zondag %>
+  </div>
+  <div class="field">
+    <%= f.label :wachtwoord %><br />
+    <%= f.text_field :wachtwoord %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

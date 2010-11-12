@@ -1,0 +1,19 @@
+<%= form_tag('/posts') %>
+<table>
+    <tr>
+        <td class="label">Naam:</td>
+        <td><%= text_field_tag "name" %></td>
+    </tr>
+    <tr>
+        <td class="label">E-mail:</td>
+        <td><%= text_field_tag "email" %></td>
+    </tr>
+    <tr valign="top">
+        <td class="label">Bericht:</td>
+        <td><%= text_area_tag "message" %></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><%= submit_tag 'Verzenden' %></td>
+    </tr>    
+</table>

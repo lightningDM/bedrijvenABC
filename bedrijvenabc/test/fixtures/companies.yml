@@ -1,0 +1,49 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  ondernemingsnummer: MyString
+  naam: MyString
+  logo_url: MyString
+  straat: MyString
+  huisnummer: MyString
+  gemeente: MyString
+  contactpersoon: MyString
+  email: MyString
+  telefoonnummer: MyString
+  beschrijving: MyString
+  sector: MyString
+  regio: MyString
+  website: MyString
+  geschiedenis: MyText
+  maandag: MyString
+  dinsdag: MyString
+  woensdag: MyString
+  donderdag: MyString
+  vrijdag: MyString
+  zaterdag: MyString
+  zondag: MyString
+  wachtwoord: MyString
+
+two:
+  ondernemingsnummer: MyString
+  naam: MyString
+  logo_url: MyString
+  straat: MyString
+  huisnummer: MyString
+  gemeente: MyString
+  contactpersoon: MyString
+  email: MyString
+  telefoonnummer: MyString
+  beschrijving: MyString
+  sector: MyString
+  regio: MyString
+  website: MyString
+  geschiedenis: MyText
+  maandag: MyString
+  dinsdag: MyString
+  woensdag: MyString
+  donderdag: MyString
+  vrijdag: MyString
+  zaterdag: MyString
+  zondag: MyString
+  wachtwoord: MyString
