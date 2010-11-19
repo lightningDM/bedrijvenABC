@@ -7494,3 +7494,45 @@ DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>
 DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_87820190_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
 Rendered search/index.html.erb within layouts/application (8.8ms)
 Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-19 09:22:46 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-19 09:22:49 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__635715882_77175970__622488511 at /home/jens/Ruby/ProjectOsi/test/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__635715882_77175970__622488511 at /home/jens/Ruby/ProjectOsi/test/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-19 09:25:58 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-19 09:26:02 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__430964411_85628560_11660861 at /home/jens/Ruby/ProjectOsi/test/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__430964411_85628560_11660861 at /home/jens/Ruby/ProjectOsi/test/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies/new" for 127.0.0.1 at 2010-11-19 09:26:08 +0100
+  Processing by CompaniesController#new as HTML
+Rendered companies/_newform.html.erb (58.8ms)
+Rendered companies/new.html.erb within layouts/application (66.3ms)
+Completed 200 OK in 114ms (Views: 70.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2010-11-19 09:26:12 +0100
+  Processing by ContactController#index as HTML
+Rendered contact/_contactform.html.erb (0.5ms)
+Rendered contact/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
