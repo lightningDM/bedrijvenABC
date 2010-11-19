@@ -1,17 +1,15 @@
-<%= form_tag('/posts') do %>
-<p>Op wat wil u zoeken?</p>
-<table>
-    <tr>
-		<td class="label"><%= radio_button_tag 'naam', 'naam' %>Naam</td>
-		<td class="label"><%= radio_button_tag 'ondernemingsnummer', 'ondernemingsnummer' %>Ondernemingsnummer</td>
-<td class="label"><%= radio_button_tag 'sector', 'sector' %>Sector</td>
-<td class="label"><%= radio_button_tag 'regio', 'regio' %>Regio</td>
-    </tr>
-</table>
-<br />
-<%= text_field_tag "param" %>
+<p>Op wat wilt u zoeken?</p>
+<form action='/search_by_name'>
+<input name="naam" type="text" />
+<input type='submit' value='Search' />
+</form>
 
-<%= submit_tag 'Zoeken' %>  
-<% end -%>
+<% if @companies.empty? %>
+        <span>There were no results for your query</span><br/><br/>
+<% else %>
+	<% for company in @companies %>
+		Result: <% company.title %>
+	<% end %>
+<% end %>
 
 

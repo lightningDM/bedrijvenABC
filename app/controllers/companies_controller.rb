@@ -1,32 +1,13 @@
 class CompaniesController < ApplicationController
-
 	def search_by_name
-		@companies = Company.find(:all, :conditions => ["naam = ?", "Wired For Sound"])
-		respond_to do |format|
-			format.html # search.html.erb
-			format.xml  { render :xml => @companies }
-		end	
+	  @companies = Company.search_by_name params[:search]
 	end
-	def search_by_ondernemingsnummer
-		@companies = Company.find(:all, :conditions => ["ondernemingsnummer = ?", "0820.371.560"])
-		respond_to do |format|
-			format.html # search.html.erb
-			format.xml  { render :xml => @companies }
-		end	
+	def search_by_nummer
+	  @companies = Company.search_by_nummer params[:search]
 	end
-	def search_by_sector
-		@companies = Company.find(:all, :conditions => ["sector = ?", "Amussement"])
-		respond_to do |format|
-			format.html # search.html.erb
-			format.xml  { render :xml => @companies }
-		end	
-	end
-	def search_by_regio
-		@companies = Company.find(:all, :conditions => ["regio = ?", "Oost-Vlaanderen"])
-		respond_to do |format|
-			format.html # search.html.erb
-			format.xml  { render :xml => @companies }
-		end	
+
+	def search
+		
 	end
   # GET /companies
   # GET /companies.xml

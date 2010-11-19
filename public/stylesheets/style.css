@@ -73,10 +73,18 @@ body {
 	margin-bottom: 50px;
 }
 h1 {
-	padding-left:10px;
-	padding-top: 5px;
 	color:#eb6017;
 	font-size:16px;
+}
+
+#content1 h1 {
+	padding-left:10px;
+	padding-top: 5px;
+}
+
+#content2 h1 {
+	padding-left:10px;
+	padding-top: 5px;
 }
 
 hr {

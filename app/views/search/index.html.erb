@@ -1,3 +1,18 @@
 <h1>Zoek een bedrijf</h1>
 
-<%= render 'searchform' %>
+<p>Zoek op naam:</p>
+<% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+<%= text_field_tag :search, params[:search], :id => 'search_field' %>
+<%= submit_tag "Search", :name => nil %> 
+<%= link_to_function "Clear", "$('search_field').clear()" %>
+<% end %> 
+
+<hr />
+<p>Zoek op ondernemingsnummer:</p>
+<% form_tag :controller => 'companies', :action => 'search_by_nummer', :method => 'get' do %>
+<%= text_field_tag :search, params[:search], :id => 'search_field' %>
+<%= submit_tag "Search", :name => nil %> 
+<%= link_to_function "Clear", "$('search_field').clear()" %>
+<% end %> 
+
+

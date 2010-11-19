@@ -4838,3 +4838,2659 @@ Started GET "/search" for 127.0.0.1 at 2010-11-12 11:40:35 +0100
 Rendered search/_searchform.html.erb (0.9ms)
 Rendered search/index.html.erb within layouts/application (14.1ms)
 Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2010-11-12 11:44:02 +0100
+
+ActionController::RoutingError (No route matches "/posts"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 11:44:16 +0100
+  Processing by SearchController#index as HTML
+Rendered search/_searchform.html.erb (1.1ms)
+Rendered search/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/posts" for 127.0.0.1 at 2010-11-12 11:44:18 +0100
+
+ActionController::RoutingError (No route matches "/search/posts"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 11:50:04 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_82182310__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (5.0ms)
+Rendered search/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search_by_name=dfg&commit=Zoeken" for 127.0.0.1 at 2010-11-12 11:50:09 +0100
+  Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"dfg", "commit"=>"Zoeken"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_83375790__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (1.2ms)
+Rendered search/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search_by_name=Wired+for+Sound&commit=Zoeken" for 127.0.0.1 at 2010-11-12 11:50:23 +0100
+  Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"Wired for Sound", "commit"=>"Zoeken"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_79331360__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (1.6ms)
+Rendered search/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search_by_name=Wired+for+Sound&commit=Zoeken" for 127.0.0.1 at 2010-11-12 11:51:56 +0100
+  Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"Wired for Sound", "commit"=>"Zoeken"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_83271450__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (0.4ms)
+Rendered search/index.html.erb within layouts/application (15.9ms)
+Completed   in 26ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    30:     <th></th>
+    31:   </tr>
+    32: 
+    33: <% @companies.each do |company| %>
+    34:   <tr>
+    35:     <td><%= company.ondernemingsnummer %></td>
+    36:     <td><%= company.naam %></td>
+  app/views/search/index.html.erb:33:in `_app_views_search_index_html_erb___259856797_83324170__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.3ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search_by_name=Wired+for+Sound&commit=Zoeken" for 127.0.0.1 at 2010-11-12 11:54:13 +0100
+  Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"Wired for Sound", "commit"=>"Zoeken"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_77022140__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (1.6ms)
+Rendered search/index.html.erb within layouts/application (5.5ms)
+Completed   in 22ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    31:     <th></th>
+    32:   </tr>
+    33: 
+    34: <% @companies.each do |company| %>
+    35:   <tr>
+    36:     <td><%= company.ondernemingsnummer %></td>
+    37:     <td><%= company.naam %></td>
+  app/views/search/index.html.erb:34:in `_app_views_search_index_html_erb___259856797_77547060__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.9ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search_by_name=Wired+for+Sound&commit=Zoeken" for 127.0.0.1 at 2010-11-12 11:54:14 +0100
+  Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"Wired for Sound", "commit"=>"Zoeken"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_83052500__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (1.1ms)
+Rendered search/index.html.erb within layouts/application (3.4ms)
+Completed   in 15ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    31:     <th></th>
+    32:   </tr>
+    33: 
+    34: <% @companies.each do |company| %>
+    35:   <tr>
+    36:     <td><%= company.ondernemingsnummer %></td>
+    37:     <td><%= company.naam %></td>
+  app/views/search/index.html.erb:34:in `_app_views_search_index_html_erb___259856797_83113120__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search_by_name=Wired+for+Sound&commit=Zoeken" for 127.0.0.1 at 2010-11-12 11:54:14 +0100
+  Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"Wired for Sound", "commit"=>"Zoeken"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_82179330__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (5.3ms)
+Rendered search/index.html.erb within layouts/application (46.1ms)
+Completed   in 48ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    31:     <th></th>
+    32:   </tr>
+    33: 
+    34: <% @companies.each do |company| %>
+    35:   <tr>
+    36:     <td><%= company.ondernemingsnummer %></td>
+    37:     <td><%= company.naam %></td>
+  app/views/search/index.html.erb:34:in `_app_views_search_index_html_erb___259856797_76370540__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.3ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search_by_name=Wired+for+Sound&commit=Zoeken" for 127.0.0.1 at 2010-11-12 11:54:33 +0100
+  Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"Wired for Sound", "commit"=>"Zoeken"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_82793950__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (1.2ms)
+Rendered search/index.html.erb within layouts/application (14.7ms)
+Completed   in 18ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    31:     <th></th>
+    32:   </tr>
+    33: 
+    34: <% @companies.each do |company| %>
+    35:   <tr>
+    36:     <td><%= company.ondernemingsnummer %></td>
+    37:     <td><%= company.naam %></td>
+  app/views/search/index.html.erb:34:in `_app_views_search_index_html_erb___259856797_82866100__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.9ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search_by_name=Wired+for+Sound&commit=Zoeken" for 127.0.0.1 at 2010-11-12 11:54:34 +0100
+  Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"Wired for Sound", "commit"=>"Zoeken"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_84169480__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (3.6ms)
+Rendered search/index.html.erb within layouts/application (7.7ms)
+Completed   in 16ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    31:     <th></th>
+    32:   </tr>
+    33: 
+    34: <% @companies.each do |company| %>
+    35:   <tr>
+    36:     <td><%= company.ondernemingsnummer %></td>
+    37:     <td><%= company.naam %></td>
+  app/views/search/index.html.erb:34:in `_app_views_search_index_html_erb___259856797_84236710__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search_by_name=Wired+for+Sound&commit=Zoeken" for 127.0.0.1 at 2010-11-12 11:54:34 +0100
+  Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"Wired for Sound", "commit"=>"Zoeken"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_82577950__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (0.3ms)
+Rendered search/index.html.erb within layouts/application (23.1ms)
+Completed   in 28ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    31:     <th></th>
+    32:   </tr>
+    33: 
+    34: <% @companies.each do |company| %>
+    35:   <tr>
+    36:     <td><%= company.ondernemingsnummer %></td>
+    37:     <td><%= company.naam %></td>
+  app/views/search/index.html.erb:34:in `_app_views_search_index_html_erb___259856797_82640580__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (14.8ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.5ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search_by_name=Wired+for+Sound&commit=Zoeken" for 127.0.0.1 at 2010-11-12 11:54:34 +0100
+  Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"Wired for Sound", "commit"=>"Zoeken"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_83957790__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (1.4ms)
+Rendered search/index.html.erb within layouts/application (5.0ms)
+Completed   in 10ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    31:     <th></th>
+    32:   </tr>
+    33: 
+    34: <% @companies.each do |company| %>
+    35:   <tr>
+    36:     <td><%= company.ondernemingsnummer %></td>
+    37:     <td><%= company.naam %></td>
+  app/views/search/index.html.erb:34:in `_app_views_search_index_html_erb___259856797_84036280__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search_by_name=Wired+for+Sound&commit=Zoeken" for 127.0.0.1 at 2010-11-12 11:54:34 +0100
+  Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"Wired for Sound", "commit"=>"Zoeken"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_82411170__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (1.3ms)
+Rendered search/index.html.erb within layouts/application (2.9ms)
+Completed   in 13ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    31:     <th></th>
+    32:   </tr>
+    33: 
+    34: <% @companies.each do |company| %>
+    35:   <tr>
+    36:     <td><%= company.ondernemingsnummer %></td>
+    37:     <td><%= company.naam %></td>
+  app/views/search/index.html.erb:34:in `_app_views_search_index_html_erb___259856797_82474340__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.6ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search_by_name=Wired+for+Sound&commit=Zoeken" for 127.0.0.1 at 2010-11-12 11:55:21 +0100
+  Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"Wired for Sound", "commit"=>"Zoeken"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_83780250__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (2.5ms)
+Rendered search/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 18ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 11:55:41 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_79521580__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (3.1ms)
+Rendered search/index.html.erb within layouts/application (47.6ms)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search_by_name=Wired+for+Sound&commit=Zoeken" for 127.0.0.1 at 2010-11-12 11:55:48 +0100
+  Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"Wired for Sound", "commit"=>"Zoeken"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_83435380__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (0.0ms)
+Rendered search/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 30ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search_by_name=Wired+for+Sound&commit=Zoeken" for 127.0.0.1 at 2010-11-12 11:57:32 +0100
+  Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"Wired for Sound", "commit"=>"Zoeken"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_79364000__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (0.0ms)
+Rendered search/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 11:57:42 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_83053640__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (3.1ms)
+Rendered search/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 40ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&naam=&commit=search_by_name" for 127.0.0.1 at 2010-11-12 11:58:17 +0100
+  Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "naam"=>"", "commit"=>"search_by_name"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_76081960__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (47.1ms)
+Rendered search/index.html.erb within layouts/application (57.6ms)
+Completed 200 OK in 70ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 11:58:46 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search__searchform_html_erb__455385601_82969040__673532116 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:1)
+Rendered search/_searchform.html.erb (1.5ms)
+Rendered search/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:06:09 +0100
+
+SyntaxError (/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/controllers/search_controller.rb:8: syntax error, unexpected '=', expecting keyword_end
+	=begin
+	 ^
+/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/controllers/search_controller.rb:30: syntax error, unexpected '=', expecting keyword_end
+	=end
+	 ^):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.1ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:06:26 +0100
+  Processing by SearchController#index as HTML
+ERROR: compiling _app_views_search__searchform_html_erb__455385601_83468200__673532116 RAISED /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:20: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:22: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_search__searchform_html_erb__455385601_83468200__673532116(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "search/_searchform";_old_output_buffer = @output_buffer;searchform = local_assigns[:searchform];;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.append_if_string=  form_tag search_path, :method => 'get' do 
+@output_buffer.safe_concat('<p>Op wat wilt u zoeken?</p>
+<form action=\'/search_by_name\'>
+<input name="naam" type="text" />
+<input type=\'submit\' value=\'Search\' />
+</form>
+
+'); if @companies.empty? 
+@output_buffer.safe_concat('        <span>There were no results for your query</span><br/><br/>
+'); else 
+@output_buffer.safe_concat('
+'); for company in @companies 
+@output_buffer.safe_concat('Result: '); company.title ;@output_buffer.safe_concat('
+'); end 
+@output_buffer.safe_concat('
+'); end 
+@output_buffer.safe_concat('
+
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_view/template.rb:255:in `module_eval'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_view/template.rb:255:in `compile'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_view/template.rb:134:in `block in render'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/notifications.rb:54:in `instrument'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_view/template.rb:127:in `render'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:294:in `render_partial'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:223:in `block in render'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:221:in `render'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:334:in `_render_partial'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:31:in `render'
+/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:3:in `_app_views_search_index_html_erb___259856797_83477860__1060000832'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_view/template.rb:135:in `block in render'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/notifications.rb:54:in `instrument'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_view/template.rb:127:in `render'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:56:in `_render_template'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:26:in `render'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:92:in `render'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:17:in `render'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/jens/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activerecord-3.0.1/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:150:in `process_action'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:435:in `_run__957874961__process_action__476950889__callbacks'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:119:in `process'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:40:in `process'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal.rb:133:in `dispatch'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_controller/metal.rb:173:in `block in action'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `block in call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:32:in `block in call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:12:in `cache'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:31:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/railties-3.0.1/lib/rails/rack/logger.rb:13:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/activesupport-3.0.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/rack-1.2.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/railties-3.0.1/lib/rails/application.rb:168:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/railties-3.0.1/lib/rails/application.rb:77:in `method_missing'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/railties-3.0.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/home/jens/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/home/jens/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/home/jens/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered search/_searchform.html.erb (2.5ms)
+Rendered search/index.html.erb within layouts/application (5.0ms)
+Completed   in 17ms
+
+ActionView::Template::Error (/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:20: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/_searchform.html.erb:22: syntax error, unexpected $end, expecting keyword_end):
+0  app/views/search/index.html.erb:3:in `_app_views_search_index_html_erb___259856797_83477860__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.9ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.4ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:06:54 +0100
+  Processing by SearchController#index as HTML
+Rendered search/_searchform.html.erb (1.1ms)
+Rendered search/index.html.erb within layouts/application (4.6ms)
+Completed   in 28ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    4: <input type='submit' value='Search' />
+    5: </form>
+    6: 
+    7: <% if @companies.empty? %>
+    8:         <span>There were no results for your query</span><br/><br/>
+    9: <% else %>
+    10: 
+  app/views/search/_searchform.html.erb:7:in `_app_views_search__searchform_html_erb__455385601_79598020__673532116'
+  app/views/search/index.html.erb:3:in `_app_views_search_index_html_erb___259856797_79718880__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:08:01 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (2.3ms)
+Completed   in 7ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_83370210__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-12 12:09:05 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:12:00 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (0.7ms)
+Completed   in 21ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_83457820__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.1ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:13:23 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.4ms)
+Completed   in 14ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_79857740__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (27.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (33.7ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:13:24 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (0.2ms)
+Completed   in 7ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_83484100__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (39.6ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:13:24 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (0.0ms)
+Completed   in 0ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_80186950__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (71.7ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (86.7ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:13:24 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (0.4ms)
+Completed   in 10ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_83561290__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:13:24 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (0.0ms)
+Completed   in 20ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_82174510__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (90.8ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:13:25 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (4.8ms)
+Completed   in 9ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_83663180__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.8ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:14:11 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (0.0ms)
+Completed   in 2ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_82212550__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.5ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:14:12 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (0.0ms)
+Completed   in 0ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_83770950__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (32.4ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:14:12 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (11.7ms)
+Completed   in 13ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_82318780__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:14:12 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (0.0ms)
+Completed   in 0ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_83849820__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.5ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:14:12 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (0.0ms)
+Completed   in 0ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_82433360__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.7ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (49.6ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:14:13 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (4.4ms)
+Completed   in 10ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_83903360__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.7ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:14:14 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (0.8ms)
+Completed   in 8ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_82477220__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-12 12:19:24 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 30ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies/new" for 127.0.0.1 at 2010-11-12 12:19:28 +0100
+  Processing by CompaniesController#new as HTML
+Rendered companies/_newform.html.erb (44.5ms)
+Rendered companies/new.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 77ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2010-11-12 12:19:33 +0100
+  Processing by ContactController#index as HTML
+Rendered contact/_contactform.html.erb (0.7ms)
+Rendered contact/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies/new" for 127.0.0.1 at 2010-11-12 12:19:35 +0100
+  Processing by CompaniesController#new as HTML
+Rendered companies/_newform.html.erb (23.7ms)
+Rendered companies/new.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 56ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2010-11-12 12:19:42 +0100
+  Processing by ContactController#index as HTML
+Rendered contact/_contactform.html.erb (7.1ms)
+Rendered contact/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 9ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:19:51 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (6.9ms)
+Completed   in 16ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_82373130__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (12.6ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.1ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (27.6ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:23:28 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (0.0ms)
+Completed   in 6ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% for company in @companies %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_83853290__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.1ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:24:50 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (0.0ms)
+Completed   in 0ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: <% if @companies.empty? %>
+    10:         <span>There were no results for your query</span><br/><br/>
+    11: <% else %>
+    12: 	<% @companies.each do |company| %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_82348100__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:25:11 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (0.0ms)
+Completed   in 2ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    6: <input type='submit' value='Search' />
+    7: </form>
+    8: 
+    9: 	<% @companies.each do |company| %>
+    10: 		Result: <% company.title %>
+    11: 	<% end %>
+  app/views/search/index.html.erb:9:in `_app_views_search_index_html_erb___259856797_83873940__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.1ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.2ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:31:00 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (0.7ms)
+Completed   in 3ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: %= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb___259856797_82373260__1060000832'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.6ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:33:37 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___259856797_82613900__1060000832 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:33:51 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___259856797_83845800__1060000832 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 12:34:00 +0100
+
+ActionController::RoutingError (No route matches "/companies/search"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:34:54 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___259856797_83601990__1060000832 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 12:34:56 +0100
+
+ActionController::RoutingError (No route matches "/companies/search"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 12:35:49 +0100
+
+ActionController::RoutingError (No route matches "/companies/search"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 12:35:50 +0100
+
+ActionController::RoutingError (No route matches "/companies/search"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.1ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 12:36:13 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mBvVMLkMbkYYAVMDJTzcaueMFPUUomuYh58QvFgUbBg=", "search"=>"Wired for Sound", "method"=>"get"}
+  [1m[36mSQL (3.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mCompany Load (0.0ms)[0m  SELECT "companies".* FROM "companies" WHERE (title LIKE '%Wired for Sound%' OR description LIKE '%Wired for Sound%')
+SQLite3::SQLException: no such column: title: SELECT     "companies".* FROM       "companies"  WHERE     (title LIKE '%Wired for Sound%' OR description LIKE '%Wired for Sound%')
+Completed   in 111ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: title: SELECT     "companies".* FROM       "companies"  WHERE     (title LIKE '%Wired for Sound%' OR description LIKE '%Wired for Sound%')):
+  app/models/company.rb:4:in `search'
+  app/controllers/companies_controller.rb:3:in `search'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.4ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.1ms)
+
+
+Started GET "/companies/search" for 127.0.0.1 at 2010-11-12 12:36:57 +0100
+  Processing by CompaniesController#search as HTML
+Completed   in 16ms
+
+TypeError (can't convert nil into String):
+  app/models/company.rb:3:in `+'
+  app/models/company.rb:3:in `search'
+  app/controllers/companies_controller.rb:3:in `search'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.9ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:37:01 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___259856797_76413220__1060000832 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (36.2ms)
+Completed 200 OK in 42ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 12:37:07 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mBvVMLkMbkYYAVMDJTzcaueMFPUUomuYh58QvFgUbBg=", "search"=>"Wired for Sound", "method"=>"get"}
+  [1m[36mCompany Load (8.4ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for Sound%' OR description LIKE '%Wired for Sound%')[0m
+SQLite3::SQLException: no such column: description: SELECT     "companies".* FROM       "companies"  WHERE     (naam LIKE '%Wired for Sound%' OR description LIKE '%Wired for Sound%')
+Completed   in 30ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: description: SELECT     "companies".* FROM       "companies"  WHERE     (naam LIKE '%Wired for Sound%' OR description LIKE '%Wired for Sound%')):
+  app/models/company.rb:4:in `search'
+  app/controllers/companies_controller.rb:3:in `search'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.5ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.9ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.3ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:38:06 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___259856797_84311780__1060000832 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 12:38:08 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mBvVMLkMbkYYAVMDJTzcaueMFPUUomuYh58QvFgUbBg=", "search"=>"Wired for Sound", "method"=>"get"}
+  [1m[35mCompany Load (6.3ms)[0m  SELECT "companies".* FROM "companies" WHERE (title LIKE '%Wired for Sound%')
+SQLite3::SQLException: no such column: title: SELECT     "companies".* FROM       "companies"  WHERE     (title LIKE '%Wired for Sound%')
+Completed   in 20ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: title: SELECT     "companies".* FROM       "companies"  WHERE     (title LIKE '%Wired for Sound%')):
+  app/models/company.rb:4:in `search'
+  app/controllers/companies_controller.rb:3:in `search'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1.7ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:38:22 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___259856797_83857650__1060000832 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 12:38:24 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mBvVMLkMbkYYAVMDJTzcaueMFPUUomuYh58QvFgUbBg=", "search"=>"Wired for Sound", "method"=>"get"}
+  [1m[36mCompany Load (1.7ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for Sound%')[0m
+Completed   in 37ms
+
+ActionView::MissingTemplate (Missing template companies/search with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:40:09 +0100
+
+ActionController::RoutingError (No route matches "/search"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:40:25 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___259856797_84087260__1060000832 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 12:40:31 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mBvVMLkMbkYYAVMDJTzcaueMFPUUomuYh58QvFgUbBg=", "search"=>"Wired for Sound", "method"=>"get"}
+  [1m[35mCompany Load (1.5ms)[0m  SELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for Sound%')
+Completed   in 39ms
+
+ActionView::MissingTemplate (Missing template companies/search with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (3.3ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 12:41:29 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mBvVMLkMbkYYAVMDJTzcaueMFPUUomuYh58QvFgUbBg=", "search"=>"Wired for Sound", "method"=>"get"}
+  [1m[36mCompany Load (3.0ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for Sound%')[0m
+Rendered companies/search.html.erb within layouts/application (40.8ms)
+Completed 200 OK in 59ms (Views: 46.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/companies/" for 127.0.0.1 at 2010-11-12 12:41:53 +0100
+  Processing by CompaniesController#index as HTML
+  [1m[35mCompany Load (3.5ms)[0m  SELECT "companies".* FROM "companies"
+Rendered companies/index.html.erb within layouts/application (72.7ms)
+Completed 200 OK in 130ms (Views: 79.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 12:42:01 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___259856797_82322190__1060000832 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 12:42:07 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mBvVMLkMbkYYAVMDJTzcaueMFPUUomuYh58QvFgUbBg=", "search"=>"Ondernemingsnaam  \t", "method"=>"get"}
+  [1m[36mCompany Load (8.6ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%Ondernemingsnaam 	%')[0m
+Rendered companies/search.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 42ms (Views: 14.8ms | ActiveRecord: 8.6ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 12:42:20 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mBvVMLkMbkYYAVMDJTzcaueMFPUUomuYh58QvFgUbBg=", "search"=>"Ondernemingsnaam", "method"=>"get"}
+  [1m[35mCompany Load (17.4ms)[0m  SELECT "companies".* FROM "companies" WHERE (naam LIKE '%Ondernemingsnaam%')
+Rendered companies/search.html.erb within layouts/application (67.1ms)
+Completed 200 OK in 107ms (Views: 73.2ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-12 12:43:10 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (50.4ms)
+Completed 200 OK in 55ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-12 15:58:28 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 70ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 15:58:37 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__559365528_80315550__617702814 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 15:58:44 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RJCNCmRjEIOnxhVh7zFw2j4q6vdcvy8WHvfEW757w5g=", "search"=>"Wired for Sound", "method"=>"get"}
+  [1m[36mSQL (5.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mCompany Load (0.4ms)[0m  SELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for Sound%')
+Rendered companies/search.html.erb within layouts/application (100.6ms)
+Completed 200 OK in 253ms (Views: 116.2ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 15:59:03 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RJCNCmRjEIOnxhVh7zFw2j4q6vdcvy8WHvfEW757w5g=", "search"=>"Wired for sound", "method"=>"get"}
+  [1m[36mCompany Load (1.7ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for sound%')[0m
+Rendered companies/search.html.erb within layouts/application (70.8ms)
+Completed 200 OK in 108ms (Views: 75.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 15:59:16 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RJCNCmRjEIOnxhVh7zFw2j4q6vdcvy8WHvfEW757w5g=", "search"=>"Wired for SOUND", "method"=>"get"}
+  [1m[35mCompany Load (0.7ms)[0m  SELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for SOUND%')
+Rendered companies/search.html.erb within layouts/application (72.7ms)
+Completed 200 OK in 99ms (Views: 76.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 15:59:24 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RJCNCmRjEIOnxhVh7zFw2j4q6vdcvy8WHvfEW757w5g=", "search"=>"Wired for ", "method"=>"get"}
+  [1m[36mCompany Load (1.1ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for %')[0m
+Rendered companies/search.html.erb within layouts/application (68.3ms)
+Completed 200 OK in 93ms (Views: 73.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 15:59:31 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RJCNCmRjEIOnxhVh7zFw2j4q6vdcvy8WHvfEW757w5g=", "search"=>"Wired for     ", "method"=>"get"}
+  [1m[35mCompany Load (0.5ms)[0m  SELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for %')
+Rendered companies/search.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 22ms (Views: 10.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/companies/new" for 127.0.0.1 at 2010-11-12 15:59:37 +0100
+  Processing by CompaniesController#new as HTML
+Rendered companies/_newform.html.erb (158.3ms)
+Rendered companies/new.html.erb within layouts/application (164.2ms)
+Completed 200 OK in 246ms (Views: 206.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-12 15:59:39 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies/" for 127.0.0.1 at 2010-11-12 16:01:42 +0100
+  Processing by CompaniesController#index as HTML
+  [1m[36mCompany Load (3.1ms)[0m  [1mSELECT "companies".* FROM "companies"[0m
+Rendered companies/index.html.erb within layouts/application (39.8ms)
+Completed 200 OK in 94ms (Views: 80.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-12 16:01:45 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:01:50 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__559365528_74951060__617702814 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:01:56 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for sound", "method"=>"get"}
+  [1m[35mCompany Load (0.7ms)[0m  SELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for sound%')
+Rendered companies/search.html.erb within layouts/application (66.0ms)
+Completed 200 OK in 84ms (Views: 70.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:02:21 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (28.3ms)
+Completed   in 31ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_80357910__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.1ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:02:53 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__559365528_80361330__617702814 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:02:57 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for sound", "method"=>"get"}
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for sound%')[0m
+Completed   in 27ms
+
+ActionView::MissingTemplate (Missing template companies/search_by_name with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:04:02 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__559365528_80974240__617702814 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:04:04 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for sound", "method"=>"get"}
+  [1m[35mCompany Load (0.6ms)[0m  SELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for sound%')
+Completed   in 26ms
+
+ActionView::MissingTemplate (Missing template companies/search_by_name with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.9ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:04:40 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__559365528_80354990__617702814 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:04:41 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for sound", "method"=>"get"}
+  [1m[36mCompany Load (0.5ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for sound%')[0m
+Completed   in 25ms
+
+ActionView::MissingTemplate (Missing template companies/search_by_name with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.9ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:06:06 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.4ms)
+Completed   in 6ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_81006820__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:06:28 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.3ms)
+Completed   in 12ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_80367440__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:06:29 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.6ms)
+Completed   in 6ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_80975120__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:06:29 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.2ms)
+Completed   in 18ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_80355490__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.1ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.2ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:06:54 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.5ms)
+Completed   in 6ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_80508860__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.6ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:06:55 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.3ms)
+Completed   in 5ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_81149820__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:06:55 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.1ms)
+Completed   in 9ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_80486320__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:07:16 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.3ms)
+Completed   in 6ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_80612790__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:07:17 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.2ms)
+Completed   in 6ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_74717940__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:07:17 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.3ms)
+Completed   in 15ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_80611270__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:07:17 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (5.5ms)
+Completed   in 15ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_74769440__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:07:18 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (6.3ms)
+Completed   in 14ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_80610550__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.9ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.2ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:07:18 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.3ms)
+Completed   in 9ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_74741920__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.4ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.6ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:07:18 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.4ms)
+Completed   in 7ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_80607650__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.5ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:07:18 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.0ms)
+Completed   in 13ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_74711930__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.1ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.3ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:08:00 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__559365528_77389000__617702814 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:08:03 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for sound", "method"=>"get"}
+Rendered companies/search.html.erb within layouts/application (2.9ms)
+Completed   in 9ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    28:     <th></th>
+    29:   </tr>
+    30: 
+    31: <% @companies.each do |company| %>
+    32:   <tr>
+    33:     <td><%= company.ondernemingsnummer %></td>
+    34:     <td><%= company.naam %></td>
+  app/views/companies/search.html.erb:31:in `_app_views_companies_search_html_erb__448507142_80538450__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.5ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:08:22 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for", "method"=>"get"}
+Rendered companies/search.html.erb within layouts/application (1.1ms)
+Completed   in 7ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    28:     <th></th>
+    29:   </tr>
+    30: 
+    31: <% @companies.each do |company| %>
+    32:   <tr>
+    33:     <td><%= company.ondernemingsnummer %></td>
+    34:     <td><%= company.naam %></td>
+  app/views/companies/search.html.erb:31:in `_app_views_companies_search_html_erb__448507142_81209930__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:09:06 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__559365528_74769070__617702814 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:09:07 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__559365528_80463880__617702814 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:09:07 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__559365528_81229300__617702814 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:09:09 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for", "method"=>"get"}
+  [1m[35mCompany Load (0.6ms)[0m  SELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for%')
+Completed   in 28ms
+
+ActionView::MissingTemplate (Missing template companies/search_by_name with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:10:04 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for", "method"=>"get"}
+  [1m[36mCompany Load (1.3ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for%')[0m
+Completed   in 18ms
+
+ActionView::MissingTemplate (Missing template companies/search_by_name with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:11:56 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__559365528_80764570__617702814 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:11:57 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for", "method"=>"get"}
+  [1m[35mCompany Load (0.7ms)[0m  SELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for%')
+Completed   in 51ms
+
+ActionView::MissingTemplate (Missing template companies/search_by_name with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.4ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:12:26 +0100
+
+NameError (undefined local variable or method `as' for #<ActionDispatch::Routing::Mapper:0x9a5a3bc>):
+  config/routes.rb:9:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:12:40 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for", "method"=>"get"}
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for%')[0m
+Completed   in 17ms
+
+ActionView::MissingTemplate (Missing template companies/search_by_name with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:12:52 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for", "method"=>"get"}
+  [1m[35mCompany Load (0.6ms)[0m  SELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for%')
+Completed   in 36ms
+
+ActionView::MissingTemplate (Missing template companies/search_by_name with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.2ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:12:56 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__559365528_80750150__617702814 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:12:58 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for", "method"=>"get"}
+  [1m[36mCompany Load (1.5ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for%')[0m
+Completed   in 43ms
+
+ActionView::MissingTemplate (Missing template companies/search_by_name with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.4ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:14:02 +0100
+
+ActionController::RoutingError (No route matches "/companies/search"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/companies/search" for 127.0.0.1 at 2010-11-12 16:14:54 +0100
+  Processing by CompaniesController#search as HTML
+Rendered companies/search.html.erb within layouts/application (1.4ms)
+Completed   in 6ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    28:     <th></th>
+    29:   </tr>
+    30: 
+    31: <% @companies.each do |company| %>
+    32:   <tr>
+    33:     <td><%= company.ondernemingsnummer %></td>
+    34:     <td><%= company.naam %></td>
+  app/views/companies/search.html.erb:31:in `_app_views_companies_search_html_erb__448507142_80795110__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/companies/search" for 127.0.0.1 at 2010-11-12 16:15:15 +0100
+  Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"search"}
+  [1m[35mCompany Load (0.4ms)[0m  SELECT "companies".* FROM "companies" WHERE ("companies"."id" = 0) LIMIT 1
+Completed   in 26ms
+
+ActiveRecord::RecordNotFound (Couldn't find Company with ID=search):
+  app/controllers/companies_controller.rb:21:in `show'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started GET "/companies/search" for 127.0.0.1 at 2010-11-12 16:15:42 +0100
+  Processing by CompaniesController#search as HTML
+Rendered companies/search.html.erb within layouts/application (1.9ms)
+Completed   in 6ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    28:     <th></th>
+    29:   </tr>
+    30: 
+    31: <% @companies.each do |company| %>
+    32:   <tr>
+    33:     <td><%= company.ondernemingsnummer %></td>
+    34:     <td><%= company.naam %></td>
+  app/views/companies/search.html.erb:31:in `_app_views_companies_search_html_erb__448507142_80777390__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:15:47 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.4ms)
+Completed   in 8ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_77649920__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (36.7ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:16:08 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.2ms)
+Completed   in 6ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_80291520__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:16:09 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.2ms)
+Completed   in 5ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_80872290__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.9ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:16:09 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (3.6ms)
+Completed   in 12ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_80131850__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.8ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:16:09 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.4ms)
+Completed   in 11ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_80869540__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.4ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.7ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:16:09 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.4ms)
+Completed   in 12ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_80124860__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.4ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:16:24 +0100
+
+ArgumentError (missing :controller):
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.6ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:17:04 +0100
+  Processing by SearchController#index as HTML
+Rendered search/index.html.erb within layouts/application (1.2ms)
+Completed   in 9ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_name", :method=>"get"}):
+    1: <h1>Zoek een bedrijf</h1>
+    2: 
+    3: <p>Op wat wilt u zoeken?</p>
+    4: <% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
+    5: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    6: <%= submit_tag "Search", :name => nil %> 
+    7: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__559365528_77592660__617702814'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (35.4ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:17:28 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__559365528_80135040__617702814 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:17:33 +0100
+
+ActionController::RoutingError (No route matches "/companies/search_by_name"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:17:56 +0100
+
+ActionController::RoutingError (No route matches "/companies/search_by_name"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:18:24 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for sound", "method"=>"get"}
+  [1m[36mCompany Load (0.6ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for sound%')[0m
+Completed   in 19ms
+
+ActionView::MissingTemplate (Missing template companies/search_by_name with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:18:55 +0100
+
+ArgumentError (missing :controller):
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:19:08 +0100
+
+ActionController::RoutingError (No route matches "/companies/search_by_name"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:19:52 +0100
+
+ActionController::RoutingError (No route matches "/companies/search_by_name"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:20:54 +0100
+
+ActionController::RoutingError (No route matches "/companies/search_by_name"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:21:01 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__559365528_80619200__617702814 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:21:09 +0100
+
+ActionController::RoutingError (No route matches "/companies/search_by_name"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:21:30 +0100
+
+ActionController::RoutingError (No route matches "/companies/search_by_name"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:21:50 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__559365528_75682410__617702814 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:21:52 +0100
+
+ActionController::RoutingError (No route matches "/companies/search_by_name"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:24:33 +0100
+
+ActionController::RoutingError (No route matches "/companies/search_by_name"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:24:46 +0100
+
+ActionController::RoutingError (No route matches "/companies/search_by_name"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:25:04 +0100
+
+ActionController::RoutingError (No route matches "/companies/search_by_name"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:25:29 +0100
+
+ActionController::RoutingError (No route matches "/companies/search_by_name"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:26:18 +0100
+
+ActionController::RoutingError (No route matches "/companies/search_by_name"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:26:24 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb__559365528_74634930__617702814 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 54ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:26:29 +0100
+
+ActionController::RoutingError (No route matches "/companies/search_by_name"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.2ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:32:34 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_88486510_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:32:40 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for SOUND", "method"=>"get"}
+  [1m[36mSQL (4.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mCompany Load (0.4ms)[0m  SELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for SOUND%')
+Completed   in 154ms
+
+ActionView::MissingTemplate (Missing template companies/search_by_name with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  app/controllers/companies_controller.rb:4:in `search_by_name'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:33:09 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for SOUND", "method"=>"get"}
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for SOUND%')[0m
+Completed   in 49ms
+
+ActionView::MissingTemplate (Missing template companies/search_by_name with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  app/controllers/companies_controller.rb:4:in `search_by_name'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.9ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:33:18 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_85406790_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:33:20 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for SOUND", "method"=>"get"}
+  [1m[35mCompany Load (1.1ms)[0m  SELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for SOUND%')
+Completed   in 24ms
+
+ActionView::MissingTemplate (Missing template companies/search_by_name with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  app/controllers/companies_controller.rb:4:in `search_by_name'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.3ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:33:39 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for SOUND", "method"=>"get"}
+  [1m[36mCompany Load (0.8ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for SOUND%')[0m
+Completed   in 15ms
+
+ActionView::MissingTemplate (Missing template companies/search_by_name with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views"):
+  app/controllers/companies_controller.rb:4:in `search_by_name'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.1ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:33:55 +0100
+  Processing by CompaniesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for SOUND", "method"=>"get"}
+Rendered companies/search.html.erb within layouts/application (1.6ms)
+Completed   in 8ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    28:     <th></th>
+    29:   </tr>
+    30: 
+    31: <% @companies.each do |company| %>
+    32:   <tr>
+    33:     <td><%= company.ondernemingsnummer %></td>
+    34:     <td><%= company.naam %></td>
+  app/views/companies/search.html.erb:31:in `_app_views_companies_search_html_erb___417902839_88455170_423425381'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.1ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:34:13 +0100
+
+ActionController::RoutingError (No route matches "/companies/search"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started POST "/companies/search?method=get" for 127.0.0.1 at 2010-11-12 16:34:25 +0100
+
+ActionController::RoutingError (No route matches "/companies/search"):
+  
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.6ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:35:16 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_81352010_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:35:18 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for SOUND", "method"=>"get"}
+  [1m[35mCompany Load (0.6ms)[0m  SELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for SOUND%')
+Rendered companies/search_by_name.html.erb within layouts/application (120.1ms)
+Completed 200 OK in 147ms (Views: 124.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:35:37 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"ondernemingsnaam", "method"=>"get"}
+  [1m[36mCompany Load (2.3ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%ondernemingsnaam%')[0m
+Rendered companies/search_by_name.html.erb within layouts/application (69.4ms)
+Completed 200 OK in 98ms (Views: 76.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:35:59 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_83136710_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:36:06 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for SOUND", "method"=>"get"}
+  [1m[35mCompany Load (2.4ms)[0m  SELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for SOUND%')
+Rendered companies/search_by_name.html.erb within layouts/application (71.4ms)
+Completed 200 OK in 95ms (Views: 76.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:36:28 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_87849430_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:36:47 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_88326760_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_88326760_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:37:48 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_82913570_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+Rendered search/index.html.erb within layouts/application (3.5ms)
+Completed   in 8ms
+
+ActionView::Template::Error (No route matches {:controller=>"companies", :action=>"search_by_nummer", :method=>"get"}):
+    9: 
+    10: <hr />
+    11: <p>Zoek op ondernemingsnummer:</p>
+    12: <% form_tag :controller => 'companies', :action => 'search_by_nummer', :method => 'get' do %>
+    13: <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    14: <%= submit_tag "Search", :name => nil %> 
+    15: <%= link_to_function "Clear", "$('search_field').clear()" %>
+  app/views/search/index.html.erb:12:in `_app_views_search_index_html_erb___244807174_82913570_423425381'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:38:20 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_82770500_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_82770500_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:38:58 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_87924670_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_87924670_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:39:04 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for SOUND", "method"=>"get"}
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed   in 22ms
+
+NoMethodError (undefined method `search_by_name' for #<Class:0xa878f84>):
+  app/controllers/companies_controller.rb:3:in `search_by_name'
+
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /home/jens/.rvm/gems/ruby-1.9.2-p0@rails3-basic/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.1ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:39:34 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_82637450_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_82637450_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:39:35 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for SOUND", "method"=>"get"}
+  [1m[35mCompany Load (0.6ms)[0m  SELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for SOUND%')
+Rendered companies/search_by_name.html.erb within layouts/application (66.6ms)
+Completed 200 OK in 94ms (Views: 72.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:39:58 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_85747210_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_85747210_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/search_by_name?method=get" for 127.0.0.1 at 2010-11-12 16:40:00 +0100
+  Processing by CompaniesController#search_by_name as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"Wired for SOUND", "method"=>"get"}
+  [1m[36mCompany Load (0.8ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (naam LIKE '%Wired for SOUND%')[0m
+Rendered companies/search_by_name.html.erb within layouts/application (67.8ms)
+Completed 200 OK in 90ms (Views: 72.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/companies/search_by_nummer?method=get" for 127.0.0.1 at 2010-11-12 16:40:08 +0100
+  Processing by CompaniesController#search_by_nummer as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"0820.371.560", "method"=>"get"}
+  [1m[35mCompany Load (5.6ms)[0m  SELECT "companies".* FROM "companies" WHERE (ondernemingsnummer LIKE '%0820.371.560%')
+Rendered companies/search_by_nummer.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 98ms (Views: 74.2ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/companies/search_by_nummer?method=get" for 127.0.0.1 at 2010-11-12 16:40:17 +0100
+  Processing by CompaniesController#search_by_nummer as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8LrHAji5MQI2vzosuI59L+p2f3GH62dOR7Nqxc0ojQ=", "search"=>"0820.371.", "method"=>"get"}
+  [1m[36mCompany Load (2.9ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE (ondernemingsnummer LIKE '%0820.371.%')[0m
+Rendered companies/search_by_nummer.html.erb within layouts/application (71.9ms)
+Completed 200 OK in 93ms (Views: 76.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:42:54 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_82255440_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_82255440_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:42:56 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_87900680_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_87900680_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-12 16:42:58 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:43:00 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_87891090_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_87891090_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies/new" for 127.0.0.1 at 2010-11-12 16:43:43 +0100
+  Processing by CompaniesController#new as HTML
+Rendered companies/_newform.html.erb (25.4ms)
+Rendered companies/new.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 60ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-12 16:43:44 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2010-11-12 16:43:46 +0100
+  Processing by ContactController#index as HTML
+Rendered contact/_contactform.html.erb (0.7ms)
+Rendered contact/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:43:48 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_88329880_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_88329880_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2010-11-12 16:43:51 +0100
+  Processing by ContactController#index as HTML
+Rendered contact/_contactform.html.erb (1.0ms)
+Rendered contact/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-12 16:43:53 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:43:54 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_85920660_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_85920660_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-12 16:44:01 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:44:06 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_85864130_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_85864130_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-12 16:44:10 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-12 16:45:30 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:45:34 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_88143660_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_88143660_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies/new" for 127.0.0.1 at 2010-11-12 16:45:37 +0100
+  Processing by CompaniesController#new as HTML
+Rendered companies/_newform.html.erb (26.0ms)
+Rendered companies/new.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 93ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:45:40 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_88630380_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_88630380_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies/new" for 127.0.0.1 at 2010-11-12 16:45:46 +0100
+  Processing by CompaniesController#new as HTML
+Rendered companies/_newform.html.erb (50.6ms)
+Rendered companies/new.html.erb within layouts/application (56.6ms)
+Completed 200 OK in 86ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:45:47 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_87810060_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_87810060_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-12 16:45:49 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2010-11-12 16:45:52 +0100
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_87820190_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___244807174_87820190_423425381 at /home/jens/Ruby/ProjectOsi/bedrijvenabc/app/views/search/index.html.erb:12)
+Rendered search/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
