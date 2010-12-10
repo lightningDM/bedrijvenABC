@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<select name="regios">
+<% @regios.each do |regio| %>
+
+<option value="<%= regio.regioId %>"><%= regio.regioName %></option>
+
+<% end %>
+</select>

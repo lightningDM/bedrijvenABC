@@ -1,0 +1,10 @@
+
+<p id="notice"><%= notice %></p>
+
+<select name="sectors">
+<% @sectors.each do |sector| %>
+
+<option value="<%= sector.sectorId %>"><%= sector.sectorName %></option>
+
+<% end %>
+</select>

@@ -13,7 +13,16 @@ Bedrijvenabc::Application.routes.draw do
 
  	get "home/index"
 	
+	get "sectors/index"
+	match "sectors" => "sectors#index", :as => :sectors
+
+	get  "regios/index"
+	match "regios" => "regios#index", :as => :regios
+
   resources :companies
+  resources :regios
+  resources :sectors
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

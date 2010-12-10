@@ -1,4 +1,5 @@
 class CompaniesController < ApplicationController
+
 	def search_by_name
 	  @companies = Company.search_by_name params[:search]
 	end
@@ -13,10 +14,12 @@ class CompaniesController < ApplicationController
   # GET /companies.xml
   def index
     @companies = Company.all
+    
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @companies }
+      format.xml  { render :xml => @regios }
     end
   end
 
@@ -25,6 +28,7 @@ class CompaniesController < ApplicationController
   # GET /companies/1.xml
   def show
     @company = Company.find(params[:id])
+
 
     respond_to do |format|
       format.html # show.html.erb
@@ -36,6 +40,8 @@ class CompaniesController < ApplicationController
   # GET /companies/new.xml
   def new
     @company = Company.new
+@regios = Regio.find(:all)
+@sectors = Sector.find(:all)
 
     respond_to do |format|
       format.html # new.html.erb
@@ -52,6 +58,7 @@ class CompaniesController < ApplicationController
   # POST /companies.xml
   def create
     @company = Company.new(params[:company])
+
 
     respond_to do |format|
       if @company.save

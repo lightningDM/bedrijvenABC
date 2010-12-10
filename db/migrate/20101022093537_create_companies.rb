@@ -26,9 +26,11 @@ class CreateCompanies < ActiveRecord::Migration
 
       t.timestamps
     end
-  end
+
+end
 
   def self.down
     drop_table :companies
+   
   end
 end
