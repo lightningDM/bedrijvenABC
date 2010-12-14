@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  sectorId: MyString
+  sectorName: MyString
+
+two:
+  sectorId: MyString
+  sectorName: MyString

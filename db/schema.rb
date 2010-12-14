@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101022093537) do
+ActiveRecord::Schema.define(:version => 20101119093623) do
 
   create_table "companies", :force => true do |t|
     t.string   "ondernemingsnummer"
@@ -35,6 +35,20 @@ ActiveRecord::Schema.define(:version => 20101022093537) do
     t.string   "zaterdag"
     t.string   "zondag"
     t.string   "wachtwoord"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "regios", :force => true do |t|
+    t.string   "regioId"
+    t.string   "regioName"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sectors", :force => true do |t|
+    t.string   "sectorId"
+    t.string   "sectorName"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

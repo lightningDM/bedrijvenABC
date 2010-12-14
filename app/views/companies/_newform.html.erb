@@ -36,6 +36,26 @@
     <%= f.text_field :email %>
   </div>
   <div class="field">
+    <%= f.label :regio %> <br />
+   <select name="regios">
+<% @regios.each do |regio| %>
+
+<option value="<%= regio.regioId %>"><%= regio.regioName %></option>
+
+<% end %>
+</select>
+  </div>
+  <div class="field">
+<%= f.label :Sector %> <br />
+<select name="sectors">
+<% @sectors.each do |sector| %>
+
+<option value="<%= sector.sectorId %>"><%= sector.sectorName %></option>
+
+<% end %>
+</select>
+</div>
+  <div class="field">
     <%= f.label :wachtwoord %><br />
     <%= f.password_field :wachtwoord %>
   </div>
