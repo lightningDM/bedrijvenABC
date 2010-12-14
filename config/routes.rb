@@ -1,6 +1,15 @@
 Bedrijvenabc::Application.routes.draw do
+
+ controller :payment do
+   get 'payment'=>:new
+   post 'payment'=>:create
+ end
+
+
+
  	get "contact/index"
 	match "contact" => "contact#index", :as => :contact
+
  	
 	get "search/index"
 	match "search" => "search#index", :as => :search
@@ -12,7 +21,10 @@ Bedrijvenabc::Application.routes.draw do
 	match "/companies/search_by_nummer" => "companies#search_by_nummer", :as => :search_by_nummer
 
  	get "home/index"
-	
+
+
+
+
   resources :companies
   # The priority is based upon order of creation:
   # first created -> highest priority.

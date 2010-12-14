@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<%= form_tag do %>
+<fieldset>
+  <legend>Payment</legend>
+
+  <div>
+    <label for="naam">Naam:</label>
+    <%= text_field_tag :naam,params[:naam] %>
+  </div>
+  <div>
+    <label for="voornaam">Voornaam:</label>
+    <%= text_field_tag :voornaam,params[:voornaam] %>
+  </div>
+  <div>
+    <label for="nummer">Nummer:</label>
+    <%= text_field_tag :nummer,params[:nummer] %>
+  </div>
+  <div>
+    <label for="maand">Maand:</label>
+    <%= text_field_tag :maand,params[:maand] %>
+  </div>
+  <div>
+    <label for="jaar">Jaar:</label>
+    <%= text_field_tag :jaar,params[:jaar] %>
+  </div>
+  <div>
+    <label for="controle">Controle:</label>
+    <%= text_field_tag :controle,params[:controle] %>
+  </div>
+  <div>
+    <%= submit_tag "pay" %>
+
+  </div>
+</fieldset>
+<% end %>
