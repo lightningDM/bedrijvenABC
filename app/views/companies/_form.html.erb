@@ -57,7 +57,8 @@
   </div>
   <div class="field">
     <%= f.label :regio %><br />
-    <%= f.text_field :regio %>
+    <%= f.select :regio, Order::REGIOS,
+                  :prompt => "Selecteer een regio" %>
   </div>
   <div class="field">
     <%= f.label :website %><br />
