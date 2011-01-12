@@ -48,39 +48,6 @@ class PaymentController < ApplicationController
     if @error==''
       ActiveMerchant::Billing::Base.mode                      = :test
 
-      ActiveMerchant::Billing::PaypalGateway.default_currency ="USD"
-      gateway                                                 =ActiveMerchant::Billing::PaypalGateway.new(
-          :login    =>"matthi_1293177185_biz_api1.howest.be",
-          :password =>"1293177202",
-          :signature=>"An5ns1Kso7MWUdW4ErQKJJJ4qi4-ACEzKYd94x2Kmq9RoYH40Oxt-cLe"
-      )
-
-      authorize_response                                      =gateway.authorize(1000, "4866292328174444",:payer_id=>"matthi_1293177091_per@howest.be", :token=>"bedrijvenabc", :ip=> "127.0.0.0")
-      # gateway.purchase(1000,receiver,:subject=>"payment",:note=>"just paying")
-      if authorize_response.success?
-
-# period can be Day, Week, Month, Year, etc...
-
-        profile_response = gateway.create_profile(params[:token],
-                                                  :description           => "DESCRIPTION_TEXT",
-                                                  :start_date            => Date.today,
-                                                  :period                => 'Month',
-                                                  :frequency             => 1,
-                                                  :amount                => 1000,
-                                                  :auto_bill_outstanding => true)
-
-        if profile_response.success?
-# capture the payment
-          gateway.capture(money, authorize_response.authorization)
-# save paypal_profile_id to edit the subscription later
-# The profile_id is stored in: profile_response.params["profile_id"
-        else
-# void the transaction
-          gateway.void(authorize_response.authorization)
-        end
-        end
-
-
         credit_card =ActiveMerchant::Billing::CreditCard.new(
             :number            =>params[:nummer],
             :month             =>params[:maand],

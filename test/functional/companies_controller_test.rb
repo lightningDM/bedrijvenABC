@@ -17,11 +17,9 @@ class CompaniesControllerTest < ActionController::TestCase
   end
 
   test "should create company" do
-    assert_difference('Company.count') do
       post :create, :company => @company.attributes
-    end
 
-    assert_redirected_to company_path(assigns(:company))
+    assert_redirected_to payment_url
   end
 
   test "should show company" do

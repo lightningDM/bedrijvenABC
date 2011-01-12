@@ -59,8 +59,7 @@ class CompaniesController < ApplicationController
   def create
     @company = Company.new(params[:company])
     session[:company]=@company
-    redirect_to payment_url
-    
+        redirect_to payment_url
   end
 
   # PUT /companies/1
