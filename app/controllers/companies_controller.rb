@@ -58,17 +58,9 @@ class CompaniesController < ApplicationController
   # POST /companies.xml
   def create
     @company = Company.new(params[:company])
-
-
-    respond_to do |format|
-      if @company.save
-        format.html { redirect_to(@company, :notice => 'Company was successfully created.') }
-        format.xml  { render :xml => @company, :status => :created, :location => @company }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @company.errors, :status => :unprocessable_entity }
-      end
-    end
+    session[:company]=@company
+    redirect_to payment_url
+    
   end
 
   # PUT /companies/1

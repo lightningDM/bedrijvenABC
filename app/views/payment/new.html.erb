@@ -1,5 +1,5 @@
-<p id="notice"><%= notice %></p>
-
+<p id="notice"><%= html_escape notice %></p>
+<% if session[:company] !=nil%>
 <%= form_tag do %>
 <fieldset>
   <legend>Payment</legend>
@@ -34,3 +34,8 @@
   </div>
 </fieldset>
 <% end %>
+
+    <%else%>
+    <p>Gelieve eerst een Company aan te maken!</p>
+
+<%end%>

@@ -21,18 +21,14 @@ Bedrijvenabc::Application.routes.draw do
 	match "/companies/search_by_nummer" => "companies#search_by_nummer", :as => :search_by_nummer
 
  	get "home/index"
-<<<<<<< HEAD
 
-
-
-=======
 	
 	get "sectors/index"
 	match "sectors" => "sectors#index", :as => :sectors
 
 	get  "regios/index"
 	match "regios" => "regios#index", :as => :regios
->>>>>>> 3145dbf1f244569cf67c9e0d8de7164d630802f8
+
 
   resources :companies
   resources :regios
