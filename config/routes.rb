@@ -1,5 +1,7 @@
 Bedrijvenabc::Application.routes.draw do
 
+  devise_for :companies
+
  controller :payment do
    get 'payment'=>:new
    post 'payment'=>:create

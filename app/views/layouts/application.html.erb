@@ -15,13 +15,12 @@
         </div>
         
         <div id="registreren"><%= link_to image_tag("../images/user-group-icon.png", :id=>"registrerenMenuButton", :border=>0), new_company_path %>
-            <p id="registrerenMenuTekst"><%= link_to 'Bedrijf registreren', new_company_path %></p>
+            <p id="registrerenMenuTekst"><%= link_to 'Bedrijf registreren', new_company_registration_path %></p>
         </div>
         
         <div id="inloggen">
-          <%= image_tag("../images/lock-icon.png",:id=>"inloggenMenuButton",:border=>0) %>
-           
-            <p id="inloggenMenuTekst">Inloggen</p>
+            <img src="../images/lock-icon.png" alt="inloggen" id="inloggenMenuButton" />
+            <p id="inloggenMenuTekst"><%= link_to 'Inloggen', new_company_session_path %></p>
         </div>
         
         <div id="contact"><%= link_to image_tag("../images/Sent-Mail-icon.png", :id=>"contactMenuButton", :border=>0), contact_path %>

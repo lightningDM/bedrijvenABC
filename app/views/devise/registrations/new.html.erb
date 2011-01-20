@@ -1,15 +1,16 @@
-<%= form_for(@company) do |f| %>
-  <% if @company.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@company.errors.count, "error") %> prohibited this company from being saved:</h2>
+<h2>Registreren</h2>
 
-      <ul>
-      <% @company.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <p><%= f.label :email %><br />
+  <%= f.text_field :email %></p>
+
+  <p><%= f.label :password %><br />
+  <%= f.password_field :password %></p>
+
+  <p><%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %></p>
 
   <div class="field">
     <%= f.label :ondernemingsnummer %><br />
@@ -95,7 +96,8 @@
     <%= f.label :zondag %><br />
     <%= f.text_field :zondag %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+
+  <p><%= f.submit "Sign up" %></p>
 <% end %>
+
+<%= render :partial => "devise/shared/links" %>

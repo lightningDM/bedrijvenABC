@@ -12,6 +12,17 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+
+  <p><%= f.label :password %><br />
+  <%= f.password_field :password %></p>
+
+  <p><%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %></p>
+
+  <div class="field">
     <%= f.label :ondernemingsnummer %><br />
     <%= f.text_field :ondernemingsnummer %>
   </div>
@@ -31,10 +42,6 @@
     <%= f.label :gemeente %><br />
     <%= f.text_field :gemeente %>
   </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
  <div class="field">
     <%= f.label :regio %><br />
     <%= f.select :regio, Company::REGIOS,
@@ -44,10 +51,6 @@
     <%= f.label :sector %><br />
     <%= f.select :sector, Company::SECTORS,
                   :prompt => "Selecteer een sector" %>
-  </div>
-  <div class="field">
-    <%= f.label :wachtwoord %><br />
-    <%= f.password_field :wachtwoord %>
   </div>
   <div class="actions">
     <%= f.submit %>
