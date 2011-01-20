@@ -13,11 +13,12 @@ class PaymentController < ApplicationController
     if params[:company]!= nil
       begin
   @company=Company.create!(params[:company])
-             session[:company]=@company
+             session[:company]=params[:company]
+  Company.delete(@company)
              redirect_to payment_url
       rescue
-        @company=Company.create(params[:company])
-        redirect_to  new_company_registration_path, :notice =>"gelieve de correcte gegevens in de verplichte velden in te voeren"
+      @company=Company.create(params[:company])
+        redirect_to new_company_registration_path, :notice => @company
       else
 
 

@@ -1,6 +1,6 @@
 class Company < ActiveRecord::Base
 
- validates :email, :naam, :presence => true, :uniqueness => true
+ validates :naam, :presence => true, :uniqueness => true
  
  REGIOS = ["West-Vlaanderen", "Oost-Vlaanderen","Antwerpen", "Limburg", "Vlaams-Brabant","Brussel", "Waals-Brabant","Henegouwen", "Luxemburg","Namen", "Luik"]
  SECTORS = ["Aannemers","Aanwervingsbureau","Accountants","Aandrijving","Aanhangwagens",

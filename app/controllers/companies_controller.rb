@@ -1,7 +1,8 @@
 class CompaniesController < ApplicationController
+  before_filter :authenticate_company!, :only=>:currentcompany
  
   def search_all
-    @companies = Company.search_all(params[:name], params[:nummer], params[:regioNummer], params[:sectorNummer]) || []
+    @companies = Company.search_all(params[:name], params[:nummer], params[:regioNummer].to_s, params[:sectorNummer].to_s) || []
   end
 
   # GET /companies
@@ -9,12 +10,12 @@ class CompaniesController < ApplicationController
   def index
     @companies = Company.all
 
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml { render :xml => @companies }
-      format.xml { render :xml => @regios }
-    end
+redirect_to search_all
+    #respond_to do |format|
+    #  format.html # index.html.erb
+     # format.xml { render :xml => @companies }
+      #format.xml { render :xml => @regios }
+    #end
   end
 
   def log_out
@@ -22,6 +23,10 @@ class CompaniesController < ApplicationController
     redirect_to root_path
   end
 
+  def currentcompany
+       @company = Company.find(current_company)
+        redirect_to companies_url+"/"+@company.id.to_s
+  end
   # GET /companies/1
   # GET /companies/1.xml
   def show

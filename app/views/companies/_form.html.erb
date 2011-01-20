@@ -52,8 +52,8 @@
     <%= f.text_area :beschrijving %>
   </div>
   <div class="field">
-    <%= f.label :sector %><br />
-    <%= f.text_field :sector %>
+ <%= f.label :sector %><br />
+    <%= f.select :sector, Company::SECTORS, :prompt => "Selecteer een sector" %>
   </div>
   <div class="field">
     <%= f.label :regio %><br />

@@ -105,6 +105,7 @@
   <%= @company.zondag %>
 </p>
 
-
+<% if current_company !=nil and current_company==@company %>
 <%= link_to 'Edit', edit_company_path(@company) %> |
+    <% end %>
 <%= link_to 'Back', companies_path %>

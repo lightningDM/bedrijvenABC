@@ -1,8 +1,20 @@
 <h2>Registreren</h2>
 
 <p>* verplichte velden</p>
-<p id="notice"><ul  id="notice"><% flash.each do |key, msg| %><li><%= msg%> </li>
-<% end %></ul></p>
+<% if notice!= nil %>
+<% @company= notice %>
+<% if @company.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@company.errors.count, "error") %> prohibited this company from being saved:</h2>
+
+      <ul>
+      <% @company.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <% end %>
 <%= form_for(resource, :as => resource_name, :url => payment_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
@@ -52,8 +64,8 @@
     <%= f.text_area :beschrijving %>
   </div>
   <div class="field">
-    <%= f.label :sector %><br />
-    <%= f.text_field :sector %>
+<%= f.label :sector %><br />
+    <%= f.select :sector, Company::SECTORS, :prompt => "Selecteer een sector" %>
   </div>
   <div class="field">
     <%= f.label :regio %><br />

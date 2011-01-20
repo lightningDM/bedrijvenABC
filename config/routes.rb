@@ -21,6 +21,8 @@ Bedrijvenabc::Application.routes.draw do
 	get "sectors/index"
 	match "sectors" => "sectors#index", :as => :sectors
 
+  get "companies/currentcompany"
+	match "currentcompany" => "companies#currentcompany", :as => :companies
 	get  "regios/index"
 	match "regios" => "regios#index", :as => :regios
   
