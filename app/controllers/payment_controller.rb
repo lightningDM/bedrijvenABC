@@ -1,54 +1,83 @@
 class PaymentController < ApplicationController
 
   def new
+
+    if session[:company]== nil
+      redirect_to new_company_registration_url
+    end
+
   end
 
   def create
 
+    if params[:company]!= nil
+      begin
+  @company=Company.create!(params[:company])
+             session[:company]=@company
+             redirect_to payment_url
+      rescue
+        @company=Company.create(params[:company])
+        redirect_to  new_company_registration_path, :notice =>"gelieve de correcte gegevens in de verplichte velden in te voeren"
+      else
 
-    @error=''
-    if (params[:nummer] =='')
-      @error +='enter a number <br/>'
-      @nummer=''
-    else
-      @nummer=params[:nummer]
-    end
-    if (params[:maand] =='')
-      @error+='enter a month<br/>'
-      @maand=''
-    else
-      @maand=params[:maand]
-    end
-    if (params[:jaar] =='')
-      @error+='enter a year<br/>'
-      @jaar =''
-    else
-      @jaar=params[:jaar]
-    end
-    if (params[:voornaam] =='')
-      @error   +='enter a firstname<br/>'
-      @voornaam=''
-    else
-      @voornaam=params[:voornaam]
-    end
-    if (params[:naam] =='')
-      @error+='enter a name<br/>'
-      @naam =''
-    else
-      @naam=params[:naam]
-    end
-    if (params[:controle] =='')
-      @error   +='enter a controlevalue<br/>'
-      @controle=''
+
+      end
+
+
+
 
     else
-      @controle=params[:controle]
-    end
 
-    if @error==''
-      ActiveMerchant::Billing::Base.mode                      = :test
 
-        credit_card =ActiveMerchant::Billing::CreditCard.new(
+      @error=false
+      if (params[:nummer] =='')
+        flash[:nummer]="enter a number"
+        @nummer       =''
+        @error        =true
+      else
+        @nummer=params[:nummer]
+      end
+      if (params[:maand] =='')
+        flash[:maand]='enter a month'
+        @maand       =''
+        @error       =true
+      else
+        @maand=params[:maand]
+      end
+      if (params[:jaar] =='')
+        flash[:jaar]='enter a year'
+        @jaar       =''
+        @error      =true
+      else
+        @jaar=params[:jaar]
+      end
+      if (params[:voornaam] =='')
+        flash[:voornaam]='enter a firstname'
+        @voornaam       =''
+        @error          =true
+      else
+        @voornaam=params[:voornaam]
+      end
+      if (params[:naam] =='')
+        flash[:naam]='enter a name'
+        @naam       =''
+        @error      =true
+      else
+        @naam=params[:naam]
+      end
+      if (params[:controle] =='')
+        flash[:controle]='enter a controlevalue'
+        @controle       =''
+        @error          =true
+
+      else
+        @controle=params[:controle]
+      end
+
+      if @error==false
+        ActiveMerchant::Billing::Base.mode = :test
+
+        credit_card                        =ActiveMerchant::Billing::CreditCard.new(
             :number            =>params[:nummer],
             :month             =>params[:maand],
             :year              =>params[:jaar],
@@ -67,32 +96,29 @@ class PaymentController < ApplicationController
           response=gateway.purchase(1000, credit_card)
 
           if response.success?
-            @company=session[:company]
+            @company=Company.create(session[:company])
             respond_to do |format|
-              if @company.save
-                format.html { redirect_to(@company, :notice => 'Company was successfully created.') }
-                format.xml { render :xml => @company, :status => :created, :location => @company }
-                session.clear
-              else
-                format.html { render :action => "new" }
-                format.xml { render :xml => @company.errors, :status => :unprocessable_entity }
-              end
+
+              format.html { redirect_to companies_url+"/"+@company.id.to_s}
+              format.xml { render :xml => @company, :status => :created, :location => @company }
+              session.clear
+
             end
           else
-            flash[:notice]='invalid data'
+            flash[:error]='invalid data'
             (redirect_to payment_url :nummer=>@nummer, :jaar=>@jaar, :maand=>@maand, :naam=>@naam, :voornaam=>@voornaam, :controle=>@controle)
           end
 
 
         else
-          flash[:notice]='invalid data'
+          flash[:error]='invalid data'
           (redirect_to payment_url :nummer=>@nummer, :jaar=>@jaar, :maand=>@maand, :naam=>@naam, :voornaam=>@voornaam, :controle=>@controle)
         end
       else
-        flash[:notice] = @error
         redirect_to payment_url :nummer=>@nummer, :jaar=>@jaar, :maand=>@maand, :naam=>@naam, :voornaam=>@voornaam, :controle=>@controle
       end
 
     end
   end
+end
 

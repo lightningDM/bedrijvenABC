@@ -17,12 +17,19 @@
         <div id="registreren"><%= link_to image_tag("../images/user-group-icon.png", :id=>"registrerenMenuButton", :border=>0), new_company_registration_path %>
             <p id="registrerenMenuTekst"><%= link_to 'Bedrijf registreren', new_company_registration_path %></p>
         </div>
-        
+
+      <% if current_company==nil %>
         <div id="inloggen">
 			<%= link_to image_tag("../images/lock-icon.png", :id=>"inloggenMenuButton", :border=>0), new_company_session_path %>
             <p id="inloggenMenuTekst"><%= link_to 'Inloggen', new_company_session_path %></p>
         </div>
-        
+       <% else %>
+         <div id="inloggen">
+          
+			<%= link_to image_tag("../images/lock-icon.png", :id=>"inloggenMenuButton", :border=>0),"/log_out" %>
+            <p id="inloggenMenuTekst"><%= link_to 'uitloggen',"log/out" %></p>
+        </div>
+          <%end%>
         <div id="contact"><%= link_to image_tag("../images/Sent-Mail-icon.png", :id=>"contactMenuButton", :border=>0), contact_path %>
             <p id="contactMenuTekst"><%= link_to 'Contact', contact_path %></p></div>
     </div>

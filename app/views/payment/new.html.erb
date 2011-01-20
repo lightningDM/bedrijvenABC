@@ -1,41 +1,46 @@
-<p id="notice"><%= html_escape notice %></p>
+<h1>New payment</h1>
+<p id="notice"><ul  id="notice"><% flash.each do |key, msg| %><li><%= msg%> </li>
+<% end %></ul></p>
+
 <% if session[:company] !=nil%>
 <%= form_tag do %>
-<fieldset>
-  <legend>Payment</legend>
 
-  <div>
-    <label for="naam">Naam:</label>
-    <%= text_field_tag :naam,params[:naam] %>
+
+  <div class="field">
+    <label for="naam">Naam: </label><br/>
+    <%= text_field_tag :naam,params[:naam] %>*
   </div>
-  <div>
-    <label for="voornaam">Voornaam:</label>
-    <%= text_field_tag :voornaam,params[:voornaam] %>
+  <div class="field">
+    <label for="voornaam">Voornaam:</label><br/>
+    <%= text_field_tag :voornaam,params[:voornaam] %>*
   </div>
-  <div>
-    <label for="nummer">Nummer:</label>
-    <%= text_field_tag :nummer,params[:nummer] %>
+  <div class="field">
+    <label for="nummer">Nummer:</label><br/>
+    <%= text_field_tag :nummer,params[:nummer] %>*
   </div>
-  <div>
-    <label for="maand">Maand:</label>
-    <%= text_field_tag :maand,params[:maand] %>
+  <div class="field">
+    <label for="maand">Maand:</label><br/>
+    <%= text_field_tag :maand,params[:maand] %>*
   </div>
-  <div>
-    <label for="jaar">Jaar:</label>
-    <%= text_field_tag :jaar,params[:jaar] %>
+  <div class="field">
+    <label for="jaar">Jaar:</label><br/>
+    <%= text_field_tag :jaar,params[:jaar] %>*
   </div>
-  <div>
-    <label for="controle">Controle:</label>
-    <%= text_field_tag :controle,params[:controle] %>
+  <div class="field">
+    <label for="controle">Controle:</label><br/>
+    <%= text_field_tag :controle,params[:controle] %>*
   </div>
-  <div>
+
+        <p>
+          * verplicht in te vullen
+        </p>
+        <p>
     <%= submit_tag "pay" %>
+</p>
 
-  </div>
-</fieldset>
 <% end %>
 
     <%else%>
-    <p>Gelieve eerst een Company aan te maken!</p>
+
 
 <%end%>

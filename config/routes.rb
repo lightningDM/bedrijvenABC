@@ -23,7 +23,12 @@ Bedrijvenabc::Application.routes.draw do
 
 	get  "regios/index"
 	match "regios" => "regios#index", :as => :regios
+  
+  get "companies/log_out"
+  match "/log_out" => "companies#log_out", :as=> :companies
 
+  post "companies/sign"
+  match "/companies/sign" => "companies#sign", :as=> :companies
 
   resources :companies
   resources :regios

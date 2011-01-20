@@ -1,4 +1,7 @@
 class Company < ActiveRecord::Base
+
+ validates :email, :naam, :presence => true, :uniqueness => true
+ 
  REGIOS = ["West-Vlaanderen", "Oost-Vlaanderen","Antwerpen", "Limburg", "Vlaams-Brabant","Brussel", "Waals-Brabant","Henegouwen", "Luxemburg","Namen", "Luik"]
  SECTORS = ["Aannemers","Aanwervingsbureau","Accountants","Aandrijving","Aanhangwagens",
 "Aandrijving","Voeding","Advocaten","Sanitair","Aluminium","Apotheker","Artiesten","Auto","Baby","Cafe","Casino","Dokter","Deegwaren",
@@ -8,6 +11,7 @@ class Company < ActiveRecord::Base
 "Kampeerterrein","Keukens","Kinderanimatie","Koper","Schilder","Reclame","Video","Muziek","Sport","Notarissen","Onderwijs","Rusthuizen",
 "Scheepvaart","Tabak","Snack-Bar", "Software","Tandarts","Televisie","Veehandel","Transport","Drank","eten","Vije Tijd", "Onderhoud","Drinken" ]
 
+ 
 	# Include default devise modules. Others available are:
   	# :token_authenticatable, :confirmable, :lockable and :timeoutable
 	devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable
