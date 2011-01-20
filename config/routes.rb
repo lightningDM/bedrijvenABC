@@ -7,23 +7,16 @@ Bedrijvenabc::Application.routes.draw do
    post 'payment'=>:create
  end
 
-
-
  	get "contact/index"
 	match "contact" => "contact#index", :as => :contact
-
  	
 	get "search/index"
 	match "search" => "search#index", :as => :search
 	
-	get "companies/search_by_name"
-	match "/companies/search_by_name" => "companies#search_by_name", :as => :search_by_name
-
-	get "companies/search_by_nummer"
-	match "/companies/search_by_nummer" => "companies#search_by_nummer", :as => :search_by_nummer
+	get "companies/search_all"
+	match "/companies/search_all" => "companies#search_all", :as => :search_all
 
  	get "home/index"
-
 	
 	get "sectors/index"
 	match "sectors" => "sectors#index", :as => :sectors

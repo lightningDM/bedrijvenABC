@@ -1,14 +1,7 @@
 class CompaniesController < ApplicationController
 
-	def search_by_name
-	  @companies = Company.search_by_name params[:search]
-	end
-	def search_by_nummer
-	  @companies = Company.search_by_nummer params[:search]
-	end
-
-	def search
-		
+	def search_all
+		@companies = Company.search_all(params[:name], params[:nummer], params[:regioNummer], params[:sectorNummer]) || []
 	end
   # GET /companies
   # GET /companies.xml

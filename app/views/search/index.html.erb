@@ -1,18 +1,16 @@
 <h1>Zoek een bedrijf</h1>
+<p>U bent niet verplicht meerdere velden in te vullen</p>
+<table>
+<% form_tag :controller => 'companies', :action => 'search_all', :method => 'get' do %>
+	<tr><td>Naam:</td><td> <%= text_field_tag :name, params[:name], :id => 'name_field' %></td></tr>
 
-<p>Zoek op naam:</p>
-<% form_tag :controller => 'companies', :action => 'search_by_name', :method => 'get' do %>
-<%= text_field_tag :search, params[:search], :id => 'search_field' %>
-<%= submit_tag "Search", :name => nil %> 
-<%= link_to_function "Clear", "$('search_field').clear()" %>
-<% end %> 
+	<tr><td>Ondernemingsnummer: </td><td><%= text_field_tag :nummer, params[:nummer], :id => 'nummer_field' %></td></tr>
 
-<hr />
-<p>Zoek op ondernemingsnummer:</p>
-<% form_tag :controller => 'companies', :action => 'search_by_nummer', :method => 'get' do %>
-<%= text_field_tag :search, params[:search], :id => 'search_field' %>
-<%= submit_tag "Search", :name => nil %> 
-<%= link_to_function "Clear", "$('search_field').clear()" %>
+<tr><td>Regio: </td><td><%= select("", "regioNummer", Company::REGIOS, {:include_blank => true}) %></td></tr>
+
+<tr><td>Sector: </td><td><%= select("", "sectorNummer", Company::SECTORS, {:include_blank => true}) %></td></tr>
+
+	<tr><td></td><td class="kolomRechts"><%= submit_tag "Search", :name => nil %> </td></tr>
 <% end %> 
 
 

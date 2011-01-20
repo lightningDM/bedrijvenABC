@@ -1,0 +1,28 @@
+<h1>Resultaten</h1>
+<p> klik op de bedrijfsnaam voor meer info</p>
+<hr>
+<table>
+  <tr>
+    <th class="searchResultsTable">Ondernemingsnummer</th>
+    <th class="searchResultsTable">Naam</th>
+    <th class="searchResultsTable">Gemeente</th>
+    <th class="searchResultsTable">Email</th>
+    <th class="searchResultsTable">Telefoonnummer</th>
+    <th class="searchResultsTable">Sector</th>
+    <th class="searchResultsTable">Regio</th>
+    <th class="searchResultsTable">Website</th>
+  </tr>
+
+<% @companies.each do |company| %>
+  <tr>
+    <td class="searchResultsTable"><%= company.ondernemingsnummer %></td>
+    <td class="searchResultsTable"><%= link_to company.naam, company %></td>
+    <td class="searchResultsTable"><%= company.gemeente %></td>
+    <td class="searchResultsTable"><%= company.email %></td>
+    <td class="searchResultsTable"><%= company.telefoonnummer %></td>
+    <td class="searchResultsTable"><%= company.sector %></td>
+    <td class="searchResultsTable"><%= company.regio %></td>
+    <td class="searchResultsTable"><%= company.website %></td>
+  </tr>
+<% end %>
+</table>
