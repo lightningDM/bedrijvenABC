@@ -26,33 +26,15 @@ class Company < ActiveRecord::Base
        :zaterdag,
        :zondag
 
-def self.search_all(name, nummer, regioNummer, sectorNummer)
+	def self.search_all(name, nummer, regioNummer, sectorNummer)
 		
 		regio_condition = "%" + regioNummer + "%"
 		sector_condition = "%" + sectorNummer + "%"
 		name_condition = "%" + name + "%"
 		nummer_condition = "%" + nummer + "%"
 
-		if !name.nil? && !name.empty?
-			#naam ingesteld
-	  		
+		find(:all, :conditions => ['(naam LIKE ? and ondernemingsnummer LIKE ? and regio LIKE ? and sector LIKE ?)', name_condition, nummer_condition, regio_condition, sector_condition])
 
-			if !nummer.nil? && !nummer.empty?
-				#naam en nummer
-				nummer_condition = "%" + nummer + "%"
-	  			find(:all, :conditions => ['(naam LIKE ? or ondernemingsnummer LIKE ?) and regio LIKE ? and sector LIKE ?', name_condition, nummer_condition, regio_condition, sector_condition])
-			else
-				#enkel naam
-			  	find(:all, :conditions => ['naam LIKE ? and regio LIKE ? and sector LIKE ?', name_condition, regio_condition, sector_condition])
-			end
-		else
-			#naam niet ingesteld
-			if !nummer.nil? && !nummer.empty?
-				#enkel nummer
-				
-			  	find(:all, :conditions => ['ondernemingsnummer LIKE ? and regio LIKE ? and sector LIKE ?', nummer_condition, regio_condition, sector_condition])
-			end
-		end
 	end
 end
 class Regio < ActiveRecord::Base
