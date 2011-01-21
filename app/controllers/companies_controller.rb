@@ -8,14 +8,14 @@ class CompaniesController < ApplicationController
   # GET /companies
   # GET /companies.xml
   def index
-    @companies = Company.all
+    @companies = Company.paginate :page=>params[:page], :per_page => 5
 
-redirect_to search_all
-    #respond_to do |format|
-    #  format.html # index.html.erb
-     # format.xml { render :xml => @companies }
-      #format.xml { render :xml => @regios }
-    #end
+     #redirect_to search_all
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml { render :xml => @companies }
+      format.xml { render :xml => @regios }
+    end
   end
 
   def log_out

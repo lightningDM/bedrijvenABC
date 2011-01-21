@@ -14,7 +14,8 @@
             <p id="zoekenMenuTekst"><%= link_to 'Zoeken', search_path %></p>
         </div>
         
-        <div id="registreren"><%= link_to image_tag("../images/user-group-icon.png", :id=>"registrerenMenuButton", :border=>0), new_company_registration_path %>
+        <div id="registreren">
+        <%= link_to image_tag("../images/user-group-icon.png", :id=>"registrerenMenuButton", :border=>0), new_company_registration_path %>
             <p id="registrerenMenuTekst"><%= link_to 'Bedrijf registreren', new_company_registration_path %></p>
         </div>
 
@@ -30,6 +31,7 @@
             <p id="inloggenMenuTekst"><%= link_to 'uitloggen',"log/out" %></p>
         </div>
           <%end%>
+       
         <div id="contact"><%= link_to image_tag("../images/Sent-Mail-icon.png", :id=>"contactMenuButton", :border=>0), contact_path %>
             <p id="contactMenuTekst"><%= link_to 'Contact', contact_path %></p></div>
     </div>

@@ -11,6 +11,10 @@
 <tr><td>Sector: </td><td><%= select("", "sectorNummer", Company::SECTORS, {:include_blank => true}) %></td></tr>
 
 	<tr><td></td><td class="kolomRechts"><%= submit_tag "Search", :name => nil %> </td></tr>
+
 <% end %> 
+</table>
+<br />
+<%= link_to 'Toon alle bedrijven' , companies_path %>
 
 

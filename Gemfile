@@ -31,3 +31,4 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'activemerchant', '1.9.1'
 gem 'devise'
+gem 'will_paginate', '>= 3.0pre'
